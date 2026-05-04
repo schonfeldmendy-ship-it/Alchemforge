@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ebd682"/>
+      <stop offset="100%" stop-color="#b8902b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ebd682" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ebd682" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- soft glow behind -->
+  <circle cx="300" cy="300" r="280" fill="url(#glow)"/>
+
+  <!-- Concentric triangles -->
+  <g opacity="0.3">
+    <path d="M300 120 L500 460 L100 460 Z" stroke="#b8902b" stroke-width="0.8" fill="none"/>
+    <path d="M300 170 L450 430 L150 430 Z" stroke="#b8902b" stroke-width="0.6" fill="none"/>
+    <path d="M300 220 L400 400 L200 400 Z" stroke="#b8902b" stroke-width="0.5" fill="none"/>
+  </g>
+
+  <!-- Central anchor node -->
+  <circle cx="300" cy="300" r="34" fill="#14120e"/>
+  <circle cx="300" cy="300" r="34" stroke="url(#g1)" stroke-width="1.5"/>
+  <circle cx="300" cy="300" r="14" fill="url(#g1)"/>
+
+  <!-- Connection lines from center to satellite nodes — SMIL animated dashes -->
+  <g stroke="#b8902b" stroke-width="1" stroke-dasharray="2 4" opacity="0.5">
+    <line x1="300" y1="300" x2="160" y2="180">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="300" x2="440" y2="180">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="300" x2="500" y2="320">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="300" x2="180" y2="440">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="300" x2="420" y2="450">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="300" x2="100" y2="320">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Satellite nodes -->
+  <g transform="translate(140 160)">
+    <rect x="-32" y="-22" width="64" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <line x1="-20" y1="-10" x2="20" y2="-10" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#b8902b" stroke-width="1.2"/>
+    <line x1="-20" y1="10" x2="10" y2="10" stroke="#b8902b" stroke-width="1.2"/>
+  </g>
+
+  <g transform="translate(440 160)">
+    <circle r="22" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <circle r="8" fill="#d4ad3f"/>
+    <g stroke="#14120e" stroke-width="1.5" stroke-linecap="round">
+      <line x1="0" y1="-22" x2="0" y2="-30"/>
+      <line x1="0" y1="22" x2="0" y2="30"/>
+      <line x1="-22" y1="0" x2="-30" y2="0"/>
+      <line x1="22" y1="0" x2="30" y2="0"/>
+      <line x1="-15" y1="-15" x2="-21" y2="-21"/>
+      <line x1="15" y1="15" x2="21" y2="21"/>
+      <line x1="-15" y1="15" x2="-21" y2="21"/>
+      <line x1="15" y1="-15" x2="21" y2="-21"/>
+    </g>
+  </g>
+
+  <g transform="translate(500 320)">
+    <rect x="-32" y="-22" width="64" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <polyline points="-22,12 -8,-2 4,8 22,-14" fill="none" stroke="#d4ad3f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="-22" cy="12" r="2" fill="#14120e"/>
+    <circle cx="-8" cy="-2" r="2" fill="#14120e"/>
+    <circle cx="4" cy="8" r="2" fill="#14120e"/>
+    <circle cx="22" cy="-14" r="2" fill="#14120e"/>
+  </g>
+
+  <g transform="translate(80 320)">
+    <path d="M-18,-26 L18,-26 L24,-20 L24,26 L-18,26 Z" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <line x1="-12" y1="-14" x2="14" y2="-14" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-12" y1="-6" x2="14" y2="-6" stroke="#b8902b" stroke-width="1.2"/>
+    <line x1="-12" y1="2" x2="14" y2="2" stroke="#b8902b" stroke-width="1.2"/>
+    <line x1="-12" y1="10" x2="6" y2="10" stroke="#b8902b" stroke-width="1.2"/>
+    <line x1="-12" y1="18" x2="14" y2="18" stroke="#b8902b" stroke-width="1.2"/>
+  </g>
+
+  <g transform="translate(180 440)">
+    <rect x="-26" y="-16" width="52" height="32" rx="3" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <polyline points="-26,-16 0,4 26,-16" fill="none" stroke="#d4ad3f" stroke-width="1.5"/>
+  </g>
+
+  <g transform="translate(420 450)">
+    <circle r="22" fill="#d4ad3f"/>
+    <polyline points="-9,0 -3,7 11,-7" fill="none" stroke="#14120e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Sparkle dots — SMIL pulse animation (radius + opacity) -->
+  <circle cx="240" cy="80" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="380" cy="60" r="1.5" fill="#d4ad3f">
+    <animate attributeName="r" values="1.5;3;1.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="540" cy="240" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="3s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60" cy="220" r="1.5" fill="#d4ad3f">
+    <animate attributeName="r" values="1.5;3;1.5" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="320" cy="540" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="500" r="1.5" fill="#d4ad3f">
+    <animate attributeName="r" values="1.5;3;1.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

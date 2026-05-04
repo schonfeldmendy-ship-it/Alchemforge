@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="goldFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ebd682"/>
+      <stop offset="100%" stop-color="#b8902b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="480" height="360" fill="#fbf8f1"/>
+
+  <g stroke="#dcd5c0" stroke-width="0.4" opacity="0.7">
+    <line x1="0" y1="60"  x2="480" y2="60"/>
+    <line x1="0" y1="120" x2="480" y2="120"/>
+    <line x1="0" y1="180" x2="480" y2="180"/>
+    <line x1="0" y1="240" x2="480" y2="240"/>
+    <line x1="0" y1="300" x2="480" y2="300"/>
+    <line x1="80"  y1="0" x2="80"  y2="360"/>
+    <line x1="160" y1="0" x2="160" y2="360"/>
+    <line x1="240" y1="0" x2="240" y2="360"/>
+    <line x1="320" y1="0" x2="320" y2="360"/>
+    <line x1="400" y1="0" x2="400" y2="360"/>
+  </g>
+
+  <!-- Trigger -->
+  <g transform="translate(80 180)">
+    <circle r="32" fill="#14120e"/>
+    <path d="M-10 -10 L10 0 L-10 10 Z" fill="#d4ad3f"/>
+    <text x="0" y="-46" font-family="DM Mono, monospace" font-size="9" fill="#b8902b" text-anchor="middle" letter-spacing="2">TRIGGER</text>
+  </g>
+
+  <!-- Path lines — SMIL animated dashed flow -->
+  <path d="M115 180 Q170 180 200 130 T280 80" stroke="url(#goldFlow)" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M115 180 Q170 180 200 180 T280 180" stroke="url(#goldFlow)" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M115 180 Q170 180 200 230 T280 280" stroke="url(#goldFlow)" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Decision diamond center -->
+  <g transform="translate(280 180)">
+    <path d="M0 -20 L20 0 L0 20 L-20 0 Z" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <path d="M-8 0 L-3 5 L8 -5" stroke="#b8902b" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Top branch -->
+  <g transform="translate(280 80)">
+    <rect x="-26" y="-16" width="52" height="32" rx="6" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <line x1="-16" y1="-6" x2="16" y2="-6" stroke="#b8902b" stroke-width="1.2"/>
+    <line x1="-16" y1="2" x2="16" y2="2" stroke="#b8902b" stroke-width="1.2"/>
+    <line x1="-16" y1="10" x2="4" y2="10" stroke="#b8902b" stroke-width="1.2"/>
+  </g>
+
+  <!-- Bottom branch -->
+  <g transform="translate(280 280)">
+    <rect x="-26" y="-16" width="52" height="32" rx="6" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#d4ad3f" stroke-width="1.5"/>
+    <line x1="4" y1="4" x2="10" y2="10" stroke="#d4ad3f" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M300 180 Q360 180 380 180" stroke="url(#goldFlow)" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M300 80 Q360 80 380 130" stroke="url(#goldFlow)" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M300 280 Q360 280 380 230" stroke="url(#goldFlow)" stroke-width="2" fill="none" stroke-dasharray="6 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- End: success target -->
+  <g transform="translate(400 180)">
+    <circle r="28" fill="#d4ad3f"/>
+    <polyline points="-10,0 -3,7 12,-9" fill="none" stroke="#14120e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="0" y="46" font-family="DM Mono, monospace" font-size="9" fill="#b8902b" text-anchor="middle" letter-spacing="2">DONE</text>
+  </g>
+
+  <!-- Pulsing dots -->
+  <circle cx="200" cy="40" r="2" fill="#d4ad3f" opacity="0.6">
+    <animate attributeName="r" values="2;3.5;2" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="320" r="2" fill="#d4ad3f" opacity="0.6">
+    <animate attributeName="r" values="2;3.5;2" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="430" cy="60" r="1.5" fill="#d4ad3f" opacity="0.6">
+    <animate attributeName="r" values="1.5;3;1.5" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="60"  cy="60" r="1.5" fill="#d4ad3f" opacity="0.6">
+    <animate attributeName="r" values="1.5;3;1.5" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>

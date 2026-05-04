@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="paperPlane" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf8f1"/>
+      <stop offset="100%" stop-color="#e7e2d4"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#ebd682" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ebd682" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="480" height="600" fill="#fbf8f1"/>
+  <circle cx="240" cy="240" r="200" fill="url(#bgGlow)"/>
+
+  <g fill="#dcd5c0" opacity="0.6">
+    <circle cx="80"  cy="80" r="1.2"/><circle cx="160" cy="80" r="1.2"/><circle cx="240" cy="80" r="1.2"/>
+    <circle cx="320" cy="80" r="1.2"/><circle cx="400" cy="80" r="1.2"/>
+    <circle cx="80"  cy="160" r="1.2"/><circle cx="160" cy="160" r="1.2"/><circle cx="240" cy="160" r="1.2"/>
+    <circle cx="320" cy="160" r="1.2"/><circle cx="400" cy="160" r="1.2"/>
+    <circle cx="80"  cy="240" r="1.2"/><circle cx="160" cy="240" r="1.2"/><circle cx="240" cy="240" r="1.2"/>
+    <circle cx="320" cy="240" r="1.2"/><circle cx="400" cy="240" r="1.2"/>
+    <circle cx="80"  cy="320" r="1.2"/><circle cx="160" cy="320" r="1.2"/><circle cx="240" cy="320" r="1.2"/>
+    <circle cx="320" cy="320" r="1.2"/><circle cx="400" cy="320" r="1.2"/>
+    <circle cx="80"  cy="400" r="1.2"/><circle cx="160" cy="400" r="1.2"/><circle cx="240" cy="400" r="1.2"/>
+    <circle cx="320" cy="400" r="1.2"/><circle cx="400" cy="400" r="1.2"/>
+    <circle cx="80"  cy="480" r="1.2"/><circle cx="160" cy="480" r="1.2"/><circle cx="240" cy="480" r="1.2"/>
+    <circle cx="320" cy="480" r="1.2"/><circle cx="400" cy="480" r="1.2"/>
+  </g>
+
+  <!-- Flight trail — animated dashed line -->
+  <path d="M60 460 Q140 380 200 320 T340 200" stroke="#d4ad3f" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="2 6" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Paper plane — gentle float using animateTransform -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 6 -10; 0 0" dur="5s" repeatCount="indefinite"/>
+    <g transform="translate(340 200) rotate(-25)">
+      <path d="M0 -50 L60 30 L0 10 L-50 30 Z" fill="url(#paperPlane)" stroke="#14120e" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M0 -50 L0 10" stroke="#14120e" stroke-width="1.2"/>
+      <path d="M0 10 L-50 30" stroke="#14120e" stroke-width="1" stroke-dasharray="2 2"/>
+      <path d="M0 -50 L40 14 L0 -8 Z" fill="#d4ad3f" opacity="0.3"/>
+    </g>
+  </g>
+
+  <!-- Envelope -->
+  <g transform="translate(60 460)">
+    <rect x="-22" y="-14" width="44" height="28" rx="2" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <polyline points="-22,-14 0,2 22,-14" fill="none" stroke="#d4ad3f" stroke-width="1.2"/>
+  </g>
+
+  <!-- Sparkles around plane -->
+  <g fill="#d4ad3f">
+    <circle cx="380" cy="160" r="2">
+      <animate attributeName="r" values="1.6;3;1.6" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="220" r="1.5">
+      <animate attributeName="r" values="1.2;2.4;1.2" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="240" r="1.5">
+      <animate attributeName="r" values="1.2;2.4;1.2" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g opacity="0.15" transform="translate(240 540)">
+    <path d="M0 -50 L40 30 L-40 30 Z" stroke="#b8902b" stroke-width="0.8" fill="none"/>
+    <path d="M0 -25 L20 20 L-20 20 Z" stroke="#b8902b" stroke-width="0.6" fill="none"/>
+  </g>
+</svg>

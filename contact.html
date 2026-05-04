@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Alchemforge</title>
+<meta name="description" content="Get in touch with Alchemforge. Tell us about your workflow — we'll tell you whether automation is the right answer." />
+<meta name="theme-color" content="#f6f3ec" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact — Alchemforge" />
+<meta property="og:description" content="Tell us about your workflow." />
+<meta property="og:image" content="assets/images/logo.png" />
+
+<link rel="icon" href="assets/images/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon-512.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Alchemforge"/></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="roi.html">ROI Calculator</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#contact-form"><span class="label">Send message</span><span class="arrow">→</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="Menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="roi.html">ROI Calculator</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary" href="#contact-form"><span class="label">Send message</span><span class="arrow">→</span></a>
+  <div class="meta">Spring Valley, NY · (845) 600-0082</div>
+</div>
+
+<main id="main">
+
+  <!-- Distinct contact hero with side illustration -->
+  <section class="page-head">
+    <div class="wrap">
+      <div class="contact-hero">
+        <div>
+          <span class="eyebrow reveal">Contact</span>
+          <h1 class="reveal" style="--delay: 0.1s">Let's start with a<br/><em class="italic-accent">conversation</em>.</h1>
+          <p class="lede reveal" style="--delay: 0.2s">
+            Send us a note. We reply within one business day — usually faster.
+          </p>
+
+          <div class="contact-info reveal" style="--delay: 0.3s; margin-top: 2.5rem;">
+            <div class="contact-item">
+              <h5>Email</h5>
+              <a href="mailto:info@alchemforge.com">info@alchemforge.com</a>
+            </div>
+            <div class="contact-item">
+              <h5>Phone</h5>
+              <a href="tel:+18456000082">(845) 600-0082</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-visual reveal" style="--delay: 0.15s">
+          <img src="assets/images/illustration-contact.svg" alt="" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section id="contact-form">
+    <div class="wrap">
+      <div class="split contact-split">
+
+        <div class="reveal">
+          <span class="section-num">/ Studio details</span>
+          <h2 style="margin-top: 1rem; font-size: clamp(1.6rem, 3vw, 2.2rem);">Where to find us.</h2>
+
+          <div class="contact-info" style="margin-top: 2rem;">
+            <div class="contact-item">
+              <h5>Studio</h5>
+              <p>Spring Valley<br/>New York 10977</p>
+            </div>
+            <div class="contact-item">
+              <h5>Hours</h5>
+              <div class="hours-list">
+                <div><strong>Monday — Thursday</strong> 9:00am — 5:00pm</div>
+                <div><strong>Friday</strong> 9:00am — 12:00pm</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" style="--delay: 0.1s">
+          <div class="form-card">
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required />
+                  <div class="err">Please enter your name.</div>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required />
+                  <div class="err">Please enter a valid email.</div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                  <div class="err">Please enter a valid phone.</div>
+                </div>
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" autocomplete="organization" required />
+                  <div class="err">Please enter your company.</div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="industry">Industry</label>
+                <select id="industry" name="industry" required>
+                  <option value="" disabled selected>Select an industry</option>
+                  <option>Manufacturing</option>
+                  <option>Finance</option>
+                  <option>Healthcare</option>
+                  <option>Retail</option>
+                  <option>Professional Services</option>
+                  <option>Other</option>
+                </select>
+                <div class="err">Please choose an industry.</div>
+              </div>
+
+              <div class="field">
+                <label for="message">What would you like to automate?</label>
+                <textarea id="message" name="message" rows="5" required placeholder="The more detail, the better our first reply will be."></textarea>
+                <div class="err">Please share a brief message.</div>
+              </div>
+
+              <div style="position: absolute; left: -9999px;" aria-hidden="true">
+                <label>Don't fill this out: <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+              </div>
+
+              <button class="btn btn-primary" type="submit" id="submitBtn" style="width: 100%; justify-content: center; padding: 1.05rem 1.4rem;">
+                <span class="label">Send Message</span>
+                <span class="arrow">→</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+
+              <p style="font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 1.2rem 0 0; text-align: center;">
+                We'll reply within one business day.
+              </p>
+            </form>
+
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+              <div class="check" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h3>Message received.</h3>
+              <p>Thanks for reaching out — we'll be in touch within one business day.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Alchemforge"/></a>
+        <p>Forge smarter workflows. Automate with precision. A workflow automation studio in Spring Valley, New York.</p>
+      </div>
+      <div class="footer-col"><h5>Studio</h5><ul>
+        <li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li>
+        <li><a href="roi.html">ROI Calculator</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Practices</h5><ul>
+        <li><a href="services.html#workflow">Workflow Automation</a></li>
+        <li><a href="services.html#process">Process Optimization</a></li>
+        <li><a href="services.html#integrations">Tool Integrations</a></li>
+        <li><a href="services.html#ai">AI-Enhanced Automation</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul>
+        <li><a href="tel:+18456000082">(845) 600-0082</a></li>
+        <li><a href="mailto:info@alchemforge.com">info@alchemforge.com</a></li>
+        <li>Spring Valley, NY 10977</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year>2026</span> Alchemforge. All rights reserved.</div>
+      <div>Forge smarter workflows.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+
+<script>
+const WEBHOOK_URL = "https://app.lionofcyber.com/webhook/alchemforge-contact";
+
+(function () {
+  const form        = document.getElementById('contactForm');
+  const submitBtn   = document.getElementById('submitBtn');
+  const successBox  = document.getElementById('formSuccess');
+  if (!form) return;
+
+  const fields = {
+    name:     { el: form.name,     test: v => v.trim().length > 1 },
+    email:    { el: form.email,    test: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+    phone:    { el: form.phone,    test: v => v.trim() === '' || /^[+\d][\d\s().-]{6,}$/.test(v.trim()) },
+    company:  { el: form.company,  test: v => v.trim().length > 1 },
+    industry: { el: form.industry, test: v => v.trim() !== '' },
+    message:  { el: form.message,  test: v => v.trim().length > 4 }
+  };
+
+  function setInvalid(key, invalid) {
+    const wrap = fields[key].el.closest('.field');
+    if (wrap) wrap.classList.toggle('invalid', invalid);
+  }
+
+  Object.keys(fields).forEach(key => {
+    const el = fields[key].el;
+    el.addEventListener('input',  () => setInvalid(key, false));
+    el.addEventListener('change', () => setInvalid(key, false));
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    if (form.website && form.website.value) return;
+
+    let firstInvalid = null;
+    let valid = true;
+    Object.keys(fields).forEach(key => {
+      const ok = fields[key].test(fields[key].el.value);
+      setInvalid(key, !ok);
+      if (!ok) {
+        valid = false;
+        if (!firstInvalid) firstInvalid = fields[key].el;
+      }
+    });
+    if (!valid) { firstInvalid && firstInvalid.focus(); return; }
+
+    const payload = {
+      name:      form.name.value.trim(),
+      email:     form.email.value.trim(),
+      phone:     form.phone.value.trim(),
+      company:   form.company.value.trim(),
+      industry:  form.industry.value,
+      message:   form.message.value.trim(),
+      source:    'alchemforge.com',
+      page:      window.location.pathname,
+      timestamp: new Date().toISOString()
+    };
+
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    try {
+      const res = await fetch(WEBHOOK_URL, {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body:    JSON.stringify(payload)
+      });
+      if (!res.ok && res.type !== 'opaque') throw new Error('Network response was not ok: ' + res.status);
+      form.style.display = 'none';
+      successBox.classList.add('show');
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      console.error('[Alchemforge contact form]', err);
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled = false;
+      alert("Sorry — we couldn't send your message just now. Please email info@alchemforge.com directly.");
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

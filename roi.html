@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ROI Calculator — Alchemforge</title>
+<meta name="description" content="A simple, transparent estimate of what workflow automation could save your business each year." />
+<meta name="theme-color" content="#f6f3ec" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ROI Calculator — Alchemforge" />
+<meta property="og:description" content="A simple, transparent estimate of what workflow automation could save you." />
+<meta property="og:image" content="assets/images/logo.png" />
+
+<link rel="icon" href="assets/images/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon-512.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Alchemforge"/></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="roi.html" class="active">ROI Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="contact.html"><span class="label">Get in Touch</span><span class="arrow">→</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="Menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="roi.html">ROI Calculator</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary" href="contact.html"><span class="label">Get in Touch</span><span class="arrow">→</span></a>
+  <div class="meta">Spring Valley, NY · (845) 600-0082</div>
+</div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow reveal">ROI Calculator</span>
+      <h1 class="reveal" style="--delay: 0.1s">What's your<br/>automation <em class="italic-accent">worth</em>?</h1>
+      <p class="lede reveal" style="--delay: 0.2s">
+        Three sliders. One honest number.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top: 3rem;">
+    <div class="wrap">
+
+      <div class="calc reveal">
+
+        <div class="calc-inputs">
+          <span class="section-num">/ Your numbers</span>
+          <h2 style="font-size: clamp(1.5rem, 2.4vw, 1.9rem); margin: 1rem 0 2rem;">Move the sliders.</h2>
+
+          <div class="range-row">
+            <span class="label">Hours saved / week</span>
+            <b id="hoursLabel">10</b>
+          </div>
+          <input type="range" id="hours" min="1" max="200" step="1" value="10" aria-label="Hours saved per week" />
+
+          <div class="range-row">
+            <span class="label">People affected</span>
+            <b id="peopleLabel">3</b>
+          </div>
+          <input type="range" id="people" min="1" max="500" step="1" value="3" aria-label="Number of people affected" />
+
+          <div class="range-row">
+            <span class="label">Hourly rate</span>
+            <b><span style="font-family: var(--mono); font-size: 1rem; vertical-align: top; color: var(--gold-deep);">$</span><span id="rateLabel">45</span></b>
+          </div>
+          <input type="range" id="rate" min="15" max="500" step="5" value="45" aria-label="Average hourly rate in dollars" />
+
+          <div class="calc-hint">
+            <span class="icon">ⓘ</span>
+            <span><strong>How to fill these in:</strong> hours per week is what your team currently spends on the repetitive work. People is how many of them. Rate is loaded cost — pay plus overhead.</span>
+          </div>
+        </div>
+
+        <div class="calc-result">
+          <span class="section-num">/ Estimated annual savings</span>
+
+          <div class="big">
+            <span class="currency">$</span><span id="annualSavings">70,200</span>
+          </div>
+          <span class="sub">Based on 52 weeks per year</span>
+
+          <div class="breakdown">
+            <div>
+              <b id="weeklyHours">30</b>
+              <span>Hours / week reclaimed</span>
+            </div>
+            <div>
+              <b id="annualHours">1,560</b>
+              <span>Hours / year reclaimed</span>
+            </div>
+            <div>
+              <b><span style="font-family: var(--mono); color: var(--gold-deep); font-size: 0.9rem; vertical-align: top;">$</span><span id="weeklySavings">1,350</span></b>
+              <span>Per week</span>
+            </div>
+            <div>
+              <b><span style="font-family: var(--mono); color: var(--gold-deep); font-size: 0.9rem; vertical-align: top;">$</span><span id="monthlySavings">5,850</span></b>
+              <span>Per month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top: 2.5rem;">
+        <div class="card" style="padding: 1.6rem 2rem; border-left: 2px solid var(--gold);">
+          <span class="num">/ Honest note</span>
+          <h3 style="font-size: 1.1rem; margin: 0.5rem 0;">This is a starting point, not a promise.</h3>
+          <p style="margin: 0; font-size: 0.95rem;">
+            Real ROI depends on the workflow, the tools, and how it gets used. When we engage with a client, we build a real estimate based on observed work — not sliders.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <section>
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div>
+          <span class="eyebrow">Next step</span>
+          <h2>Want a real estimate?</h2>
+          <p>Spend an hour with us. We'll come back with a written estimate based on what we actually saw.</p>
+        </div>
+        <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="contact.html"><span class="label">Start a conversation</span><span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="services.html"><span class="label">See services</span><span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Alchemforge"/></a>
+        <p>Forge smarter workflows. Automate with precision. A workflow automation studio in Spring Valley, New York.</p>
+      </div>
+      <div class="footer-col"><h5>Studio</h5><ul>
+        <li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li>
+        <li><a href="roi.html">ROI Calculator</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Practices</h5><ul>
+        <li><a href="services.html#workflow">Workflow Automation</a></li>
+        <li><a href="services.html#process">Process Optimization</a></li>
+        <li><a href="services.html#integrations">Tool Integrations</a></li>
+        <li><a href="services.html#ai">AI-Enhanced Automation</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul>
+        <li><a href="tel:+18456000082">(845) 600-0082</a></li>
+        <li><a href="mailto:info@alchemforge.com">info@alchemforge.com</a></li>
+        <li>Spring Valley, NY 10977</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year>2026</span> Alchemforge. All rights reserved.</div>
+      <div>Forge smarter workflows.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+
+<script>
+(function () {
+  const $ = id => document.getElementById(id);
+  const hours = $('hours'), people = $('people'), rate = $('rate');
+  const hoursLabel = $('hoursLabel'), peopleLabel = $('peopleLabel'), rateLabel = $('rateLabel');
+  const annualSavings = $('annualSavings'), weeklyHours = $('weeklyHours'),
+        annualHours = $('annualHours'), weeklySavings = $('weeklySavings'), monthlySavings = $('monthlySavings');
+  const bigEl = annualSavings.closest('.big');
+
+  const fmt = n => Math.round(n).toLocaleString('en-US');
+
+  // Each animated element gets its own raf id so they don't cancel each other.
+  const rafIds = new WeakMap();
+
+  function animateNumber(el, from, to) {
+    if (rafIds.has(el)) cancelAnimationFrame(rafIds.get(el));
+    const start = performance.now();
+    const dur = 500;
+    const delta = to - from;
+    function step(now) {
+      const t = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = fmt(from + delta * eased);
+      if (t < 1) {
+        rafIds.set(el, requestAnimationFrame(step));
+      } else {
+        rafIds.delete(el);
+      }
+    }
+    rafIds.set(el, requestAnimationFrame(step));
+  }
+
+  // Initial values match the default slider positions so the first paint matches reality.
+  let last = {
+    annual:   10 * 3 * 45 * 52,   // 70200
+    weeklyH:  10 * 3,             // 30
+    annualH:  10 * 3 * 52,        // 1560
+    weeklyS:  10 * 3 * 45,        // 1350
+    monthlyS: 10 * 3 * 45 * 52 / 12, // 5850
+  };
+
+  // Bump animation on the big number — restarts on every change for visible feedback
+  let bumpTimeout;
+  function triggerBump() {
+    if (!bigEl) return;
+    bigEl.classList.remove('bumping');
+    // force reflow so the animation can restart
+    void bigEl.offsetWidth;
+    bigEl.classList.add('bumping');
+    clearTimeout(bumpTimeout);
+    bumpTimeout = setTimeout(() => bigEl.classList.remove('bumping'), 500);
+  }
+
+  function update() {
+    const h = +hours.value, p = +people.value, r = +rate.value;
+    hoursLabel.textContent = h;
+    peopleLabel.textContent = p;
+    rateLabel.textContent = r;
+
+    const weeklyH  = h * p;
+    const annualH  = weeklyH * 52;
+    const weeklyS  = weeklyH * r;
+    const monthlyS = weeklyS * (52 / 12);
+    const annualS  = weeklyS * 52;
+
+    animateNumber(annualSavings, last.annual,   annualS);
+    animateNumber(weeklyHours,   last.weeklyH,  weeklyH);
+    animateNumber(annualHours,   last.annualH,  annualH);
+    animateNumber(weeklySavings, last.weeklyS,  weeklyS);
+    animateNumber(monthlySavings, last.monthlyS, monthlyS);
+
+    triggerBump();
+
+    last = { annual: annualS, weeklyH, annualH, weeklyS, monthlyS };
+  }
+
+  hours.addEventListener('input', update);
+  people.addEventListener('input', update);
+  rate.addEventListener('input', update);
+})();
+</script>
+
+</body>
+</html>

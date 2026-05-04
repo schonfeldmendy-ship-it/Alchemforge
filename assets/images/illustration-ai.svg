@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none" aria-hidden="true">
+  <rect width="480" height="360" fill="#fbf8f1"/>
+
+  <g stroke="#dcd5c0" stroke-width="0.4" opacity="0.5">
+    <line x1="0" y1="60" x2="480" y2="60"/>
+    <line x1="0" y1="120" x2="480" y2="120"/>
+    <line x1="0" y1="180" x2="480" y2="180"/>
+    <line x1="0" y1="240" x2="480" y2="240"/>
+    <line x1="0" y1="300" x2="480" y2="300"/>
+  </g>
+
+  <!-- INPUT -->
+  <g transform="translate(80 180)">
+    <text x="0" y="-100" font-family="DM Mono, monospace" font-size="9" fill="#b8902b" text-anchor="middle" letter-spacing="2">INPUT</text>
+    <line x1="-40" y1="-70" x2="20" y2="-70" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-30" y1="-58" x2="40" y2="-58" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-40" y1="-46" x2="10" y2="-46" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-25" y1="-34" x2="40" y2="-34" stroke="#14120e" stroke-width="1.2"/>
+    <g transform="translate(0 0)">
+      <path d="M-26 -16 L18 -16 L26 -8 L26 24 L-26 24 Z" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+      <line x1="-18" y1="-4" x2="18" y2="-4" stroke="#b8902b" stroke-width="1"/>
+      <line x1="-18" y1="4" x2="18" y2="4" stroke="#b8902b" stroke-width="1"/>
+      <line x1="-18" y1="12" x2="10" y2="12" stroke="#b8902b" stroke-width="1"/>
+    </g>
+    <line x1="-40" y1="40" x2="20" y2="40" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-30" y1="52" x2="40" y2="52" stroke="#14120e" stroke-width="1.2"/>
+    <line x1="-40" y1="64" x2="10" y2="64" stroke="#14120e" stroke-width="1.2"/>
+  </g>
+
+  <!-- AI BRAIN -->
+  <g transform="translate(240 180)">
+    <circle r="60" fill="none" stroke="#d4ad3f" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="48" fill="none" stroke="#d4ad3f" stroke-width="0.6" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="36" fill="#14120e"/>
+
+    <circle cx="-16" cy="-12" r="4" fill="#ebd682">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="16" cy="-12" r="4" fill="#ebd682">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-20" cy="6" r="4" fill="#d4ad3f">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="20" cy="6" r="4" fill="#d4ad3f">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="16" r="4" fill="#ebd682">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-4" r="3" fill="#fbf8f1">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <g stroke="#d4ad3f" stroke-width="0.8" opacity="0.7">
+      <line x1="-16" y1="-12" x2="16" y2="-12"/>
+      <line x1="-16" y1="-12" x2="0" y2="16"/>
+      <line x1="16" y1="-12" x2="0" y2="16"/>
+      <line x1="-20" y1="6" x2="20" y2="6"/>
+      <line x1="-20" y1="6" x2="0" y2="-4"/>
+      <line x1="20" y1="6" x2="0" y2="-4"/>
+    </g>
+    <text x="0" y="56" font-family="DM Mono, monospace" font-size="9" fill="#b8902b" text-anchor="middle" letter-spacing="2">PROCESS</text>
+  </g>
+
+  <!-- Connection lines input → brain → output — animated dashes -->
+  <g stroke="#b8902b" stroke-width="1" stroke-dasharray="3 3" opacity="0.6">
+    <line x1="115" y1="180" x2="195" y2="180">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="285" y1="180" x2="365" y2="180">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Sparkles around brain (with rotation via animateTransform) -->
+  <g fill="#d4ad3f">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 174 114" to="360 174 114" dur="8s" repeatCount="indefinite"/>
+      <path d="M170 110 l4 -10 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 z" opacity="0.7"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360 313 243" to="0 313 243" dur="6s" repeatCount="indefinite"/>
+      <path d="M310 240 l3 -7 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 z" opacity="0.6"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 182 272" to="360 182 272" dur="8s" repeatCount="indefinite"/>
+      <path d="M180 270 l2 -5 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 z" opacity="0.5"/>
+    </g>
+  </g>
+
+  <!-- OUTPUT -->
+  <g transform="translate(400 180)">
+    <text x="0" y="-100" font-family="DM Mono, monospace" font-size="9" fill="#b8902b" text-anchor="middle" letter-spacing="2">OUTPUT</text>
+    <g>
+      <rect x="-32" y="-70" width="14" height="14" fill="#d4ad3f"/>
+      <line x1="-12" y1="-63" x2="32" y2="-63" stroke="#14120e" stroke-width="1.2"/>
+      <rect x="-32" y="-50" width="14" height="14" fill="#d4ad3f"/>
+      <line x1="-12" y1="-43" x2="32" y2="-43" stroke="#14120e" stroke-width="1.2"/>
+      <rect x="-32" y="-30" width="14" height="14" fill="#d4ad3f"/>
+      <line x1="-12" y1="-23" x2="20" y2="-23" stroke="#14120e" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(0 8)">
+      <circle r="22" fill="#d4ad3f"/>
+      <polyline points="-9,0 -3,7 11,-7" fill="none" stroke="#14120e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g>
+      <rect x="-32" y="40" width="14" height="14" fill="#14120e"/>
+      <line x1="-12" y1="47" x2="32" y2="47" stroke="#14120e" stroke-width="1.2"/>
+      <rect x="-32" y="60" width="14" height="14" fill="#14120e"/>
+      <line x1="-12" y1="67" x2="20" y2="67" stroke="#14120e" stroke-width="1.2"/>
+    </g>
+  </g>
+</svg>

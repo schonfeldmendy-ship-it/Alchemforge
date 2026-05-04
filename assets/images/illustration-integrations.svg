@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none" aria-hidden="true">
+  <rect width="480" height="360" fill="#fbf8f1"/>
+
+  <g stroke="#dcd5c0" stroke-width="0.4" opacity="0.5">
+    <line x1="0" y1="60" x2="480" y2="60"/>
+    <line x1="0" y1="120" x2="480" y2="120"/>
+    <line x1="0" y1="180" x2="480" y2="180"/>
+    <line x1="0" y1="240" x2="480" y2="240"/>
+    <line x1="0" y1="300" x2="480" y2="300"/>
+  </g>
+
+  <g transform="translate(240 180)">
+    <circle r="40" fill="#14120e"/>
+    <circle r="40" stroke="#d4ad3f" stroke-width="1"/>
+    <circle r="20" fill="none" stroke="#d4ad3f" stroke-width="1.5"/>
+    <circle r="6" fill="#d4ad3f"/>
+    <text x="0" y="60" font-family="DM Mono, monospace" font-size="9" fill="#b8902b" text-anchor="middle" letter-spacing="2">ALCHEMFORGE</text>
+  </g>
+
+  <g stroke="#b8902b" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" fill="none">
+    <line x1="240" y1="180" x2="100" y2="80">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="180" x2="380" y2="80">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="180" x2="60" y2="180">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="180" x2="420" y2="180">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="180" x2="100" y2="280">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="180" x2="380" y2="280">
+      <animate attributeName="stroke-dashoffset" from="0" to="-12" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <g transform="translate(100 80)">
+    <rect x="-30" y="-22" width="60" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <circle cx="-10" cy="-4" r="6" fill="#d4ad3f"/>
+    <path d="M-22 14 Q-10 4 0 14" stroke="#b8902b" stroke-width="1.5" fill="none"/>
+    <line x1="8" y1="-8" x2="22" y2="-8" stroke="#14120e" stroke-width="1"/>
+    <line x1="8" y1="-2" x2="22" y2="-2" stroke="#b8902b" stroke-width="1"/>
+    <line x1="8" y1="4" x2="18" y2="4" stroke="#b8902b" stroke-width="1"/>
+    <text x="0" y="36" font-family="DM Mono, monospace" font-size="8" fill="#b8902b" text-anchor="middle" letter-spacing="1">CRM</text>
+  </g>
+
+  <g transform="translate(380 80)">
+    <rect x="-30" y="-22" width="60" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <rect x="-22" y="-12" width="44" height="24" rx="2" fill="none" stroke="#14120e" stroke-width="1"/>
+    <path d="M-22 -12 L0 4 L22 -12" stroke="#d4ad3f" stroke-width="1.5" fill="none"/>
+    <text x="0" y="36" font-family="DM Mono, monospace" font-size="8" fill="#b8902b" text-anchor="middle" letter-spacing="1">EMAIL</text>
+  </g>
+
+  <g transform="translate(60 180)">
+    <rect x="-30" y="-22" width="60" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <text x="0" y="6" font-family="Instrument Serif, serif" font-size="22" fill="#d4ad3f" text-anchor="middle">$</text>
+    <text x="0" y="36" font-family="DM Mono, monospace" font-size="8" fill="#b8902b" text-anchor="middle" letter-spacing="1">BOOKS</text>
+  </g>
+
+  <g transform="translate(420 180)">
+    <rect x="-30" y="-22" width="60" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <line x1="-18" y1="-10" x2="-12" y2="-10" stroke="#d4ad3f" stroke-width="2"/>
+    <line x1="-6" y1="-10" x2="18" y2="-10" stroke="#14120e" stroke-width="1"/>
+    <line x1="-18" y1="-2" x2="-6" y2="-2" stroke="#d4ad3f" stroke-width="2"/>
+    <line x1="0" y1="-2" x2="18" y2="-2" stroke="#14120e" stroke-width="1"/>
+    <line x1="-18" y1="6" x2="6" y2="6" stroke="#d4ad3f" stroke-width="2"/>
+    <line x1="12" y1="6" x2="18" y2="6" stroke="#14120e" stroke-width="1"/>
+    <line x1="-18" y1="14" x2="-12" y2="14" stroke="#14120e" stroke-width="1"/>
+    <text x="0" y="36" font-family="DM Mono, monospace" font-size="8" fill="#b8902b" text-anchor="middle" letter-spacing="1">TASKS</text>
+  </g>
+
+  <g transform="translate(100 280)">
+    <rect x="-30" y="-22" width="60" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <path d="M-14 -8 Q-14 -16 0 -16 Q14 -16 14 -8 L14 6 Q14 12 8 12 L4 12 L0 18 L-4 12" fill="none" stroke="#d4ad3f" stroke-width="1.5" stroke-linejoin="round"/>
+    <text x="0" y="36" font-family="DM Mono, monospace" font-size="8" fill="#b8902b" text-anchor="middle" letter-spacing="1">CHAT</text>
+  </g>
+
+  <g transform="translate(380 280)">
+    <rect x="-30" y="-22" width="60" height="44" rx="8" fill="#fbf8f1" stroke="#14120e" stroke-width="1.5"/>
+    <path d="M-18 -10 L-2 -10 L2 -6 L18 -6 L18 12 L-18 12 Z" fill="#d4ad3f" opacity="0.3" stroke="#14120e" stroke-width="1.5"/>
+    <text x="0" y="36" font-family="DM Mono, monospace" font-size="8" fill="#b8902b" text-anchor="middle" letter-spacing="1">FILES</text>
+  </g>
+
+  <circle cx="170" cy="130" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="310" cy="130" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="2s" begin="0.33s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="0.33s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="180" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="2s" begin="0.66s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="0.66s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="330" cy="180" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="2s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="170" cy="230" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="2s" begin="1.33s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="1.33s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="310" cy="230" r="2" fill="#d4ad3f">
+    <animate attributeName="r" values="2;3.5;2" dur="2s" begin="1.66s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" begin="1.66s" repeatCount="indefinite"/>
+  </circle>
+</svg>
