@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Offline Bank Statement Converter — Alchemforge</title>
+<meta name="description" content="Convert PDF bank statements — digital or scanned — into CSV, Excel and QBO files, entirely on your own computer. One-time purchase, $129. By Alchemforge." />
+<meta name="theme-color" content="#f6f3ec" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Offline Bank Statement Converter — Alchemforge" />
+<meta property="og:description" content="PDF bank statements to CSV, Excel and QBO — 100% offline on your computer. $129 one-time, lifetime license." />
+<meta property="og:image" content="assets/images/logo.png" />
+<meta property="og:site_name" content="Alchemforge" />
+
+<link rel="icon" href="assets/images/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/site.css" />
+
+<style>
+/* Page-local styles for the product page; everything else comes from site.css */
+.product-hero { padding: 7.5rem 0 3rem; }
+.product-hero .wrap { max-width: 980px; }
+.price-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.9rem; margin: 1.4rem 0 0.4rem; }
+.price-big { font-family: "Instrument Serif", serif; font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1; }
+.price-note { font-size: 0.95rem; opacity: 0.75; }
+.buy-card { border: 1px solid rgba(0,0,0,0.12); border-radius: 14px; padding: 1.6rem 1.6rem 1.4rem; background: #fff; max-width: 560px; margin-top: 1.6rem; }
+.buy-card ul { list-style: none; margin: 0 0 1.2rem; padding: 0; }
+.buy-card li { padding: 0.32rem 0 0.32rem 1.5rem; position: relative; }
+.buy-card li::before { content: "✓"; position: absolute; left: 0; font-weight: 600; }
+.buy-smallprint { font-size: 0.85rem; opacity: 0.7; margin-top: 0.8rem; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem 2rem; margin-top: 2rem; }
+.feature-grid h3 { font-size: 1.08rem; margin: 0 0 0.35rem; }
+.feature-grid p { margin: 0; font-size: 0.97rem; opacity: 0.85; }
+.steps { counter-reset: step; margin: 2rem 0 0; padding: 0; list-style: none; max-width: 760px; }
+.steps li { counter-increment: step; padding: 0.9rem 0 0.9rem 3rem; position: relative; border-top: 1px solid rgba(0,0,0,0.1); }
+.steps li:first-child { border-top: 0; }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 0.8rem; width: 2rem; height: 2rem; border: 1px solid rgba(0,0,0,0.25); border-radius: 50%; display: grid; place-items: center; font-family: "DM Mono", monospace; font-size: 0.9rem; }
+.qa { max-width: 760px; }
+.qa h3 { font-size: 1.05rem; margin: 1.6rem 0 0.3rem; }
+.qa p { margin: 0; opacity: 0.88; }
+.verify-band { background: #fff; border-top: 1px solid rgba(0,0,0,0.08); border-bottom: 1px solid rgba(0,0,0,0.08); padding: 3rem 0; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Alchemforge home"><img src="assets/images/logo.png" alt="Alchemforge"/></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="converter.html" class="active">Converter</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="#buy"><span class="label">Buy — $129</span><span class="arrow">→</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-panel" id="mobilePanel" role="dialog" aria-label="Menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="converter.html">Converter</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="btn btn-primary" href="#buy"><span class="label">Buy — $129</span><span class="arrow">→</span></a>
+  <div class="meta">Spring Valley, NY · (845) 600-0082</div>
+</div>
+
+<main id="main">
+
+  <section class="product-hero">
+    <div class="wrap">
+      <span class="eyebrow">Desktop software by Alchemforge</span>
+      <h1>Offline Bank Statement<br/><em class="italic-accent">Converter</em></h1>
+      <p class="lede">
+        Turn PDF bank statements — digital or scanned — into clean CSV, Excel and QBO files,
+        entirely on your own computer. Your statements never leave your machine.
+      </p>
+
+      <div class="buy-card" id="buy">
+        <div class="price-row">
+          <span class="price-big">$129</span>
+          <span class="price-note">one-time purchase · no subscription</span>
+        </div>
+        <ul>
+          <li>Lifetime license for 2 computers</li>
+          <li>Digital and scanned PDF statements</li>
+          <li>Exports CSV, Excel (XLSX) and QBO</li>
+          <li>Every row verified against the statement's own printed balances</li>
+          <li>Free updates</li>
+          <li>Free tier included — test it on your own statements before you pay</li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html"><span class="label">Buy now — $129</span><span class="arrow">→</span></a>
+        <p class="buy-smallprint">
+          Online checkout is opening shortly. Until then, purchases are handled personally —
+          use the contact page or email <a href="mailto:mendy@alchemforge.com">mendy@alchemforge.com</a>
+          and you'll receive the installer and your license key the same day.
+          14-day money-back guarantee. <a href="terms.html">Terms &amp; refund policy</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="verify-band">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Numbers you can <em class="italic-accent">trust</em>.</h2>
+        </div>
+        <div>
+          <p class="lede" style="margin: 0;">
+            Bank statements print their own proof: a balance after every transaction.
+            The converter checks every extracted row against those printed balances and
+            marks it <strong>Verified</strong> — and if a scan is unreadable, it flags the row
+            instead of guessing. You see exactly what reconciles before you export anything.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>What it <em class="italic-accent">does</em>.</h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <div>
+          <h3>100% offline</h3>
+          <p>Runs entirely on your Windows computer. No uploads, no cloud, no account. Built for people who handle other people's financial documents.</p>
+        </div>
+        <div>
+          <h3>Scanned statements too</h3>
+          <p>Built-in OCR reads paper statements that were scanned to PDF — not just digital originals.</p>
+        </div>
+        <div>
+          <h3>Three export formats</h3>
+          <p>CSV for anything, XLSX for Excel, QBO for QuickBooks. Batch-convert a whole folder at once.</p>
+        </div>
+        <div>
+          <h3>Balance verification</h3>
+          <p>Each transaction is reconciled against the statement's printed running balance, so missing or misread rows can't slip through silently.</p>
+        </div>
+        <div>
+          <h3>Many bank layouts</h3>
+          <p>Single-column and two-column statements, sectioned business statements, trailing-minus formats, and more — with layout inference for banks we haven't seen.</p>
+        </div>
+        <div>
+          <h3>Made for bookkeepers</h3>
+          <p>Bookkeepers, accountants, property managers and small business owners who convert statements every month — without sending clients' data to a website.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>How it <em class="italic-accent">works</em>.</h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>Drop PDF statements (or a whole folder) into the app.</li>
+        <li>Watch every transaction appear with a Verified check against the printed balances.</li>
+        <li>Export CSV, XLSX or QBO — done. Nothing ever left your computer.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap qa">
+      <div class="section-head">
+        <div>
+          <h2>Questions, <em class="italic-accent">answered</em>.</h2>
+        </div>
+      </div>
+      <h3>Is my data really private?</h3>
+      <p>Yes. The app works fully offline. Statements are processed on your computer and are never uploaded anywhere.</p>
+      <h3>Can I try it before paying?</h3>
+      <p>Yes — the free tier lets you convert your own statements with a page limit, so you can confirm it reads your bank's layout before buying.</p>
+      <h3>What does the license cover?</h3>
+      <p>One purchase activates the app on up to 2 computers, forever, with free updates.</p>
+      <h3>What if it doesn't work on my statements?</h3>
+      <p>14-day money-back guarantee, no questions asked. See the <a href="terms.html">terms &amp; refund policy</a>.</p>
+      <h3>Which computers does it run on?</h3>
+      <p>Windows 10 and 11.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Alchemforge"/></a>
+        <p>Forge smarter workflows. Automate with precision. A workflow automation studio in Spring Valley, New York.</p>
+      </div>
+      <div class="footer-col"><h5>Studio</h5><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="roi.html">ROI Calculator</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Products</h5><ul>
+        <li><a href="converter.html">Bank Statement Converter</a></li>
+        <li><a href="terms.html">Terms &amp; Refunds</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul>
+        <li><a href="tel:+18456000082">(845) 600-0082</a></li>
+        <li><a href="mailto:info@alchemforge.com">info@alchemforge.com</a></li>
+        <li>Spring Valley, NY 10977</li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year>2026</span> Alchemforge. All rights reserved.</div>
+      <div>Forge smarter workflows.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
