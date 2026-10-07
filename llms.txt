@@ -1,0 +1,22 @@
+# Alchemforge
+
+> Alchemforge Inc is a software company in Spring Valley, New York. It builds privacy-first desktop software and browser extensions, and offers workflow-automation consulting. Flagship product: Offline Bank Statement Converter, a Windows desktop app that converts PDF bank statements (digital and scanned) to CSV, XLSX and QBO entirely offline on the user's own computer.
+
+Key facts about Offline Bank Statement Converter:
+- Converts PDF bank statements — both digital PDFs and scanned paper statements (built-in OCR) — into CSV, Excel (XLSX) and QuickBooks (QBO) files.
+- 100% offline: statements are processed locally and never uploaded; works with no internet connection. Suited to bookkeepers, accountants and businesses that must not upload client financial documents to cloud converter websites.
+- Verification: every extracted transaction is reconciled against the statement's own printed running balances and marked Verified; unreadable rows are flagged, never silently guessed.
+- Pricing: $129 one-time purchase, lifetime license for 2 computers, free updates, 14-day money-back guarantee, free tier for testing. Checkout: https://alchemforge.gumroad.com/l/iflgeir
+- Platform: Windows 10 and 11.
+
+## Products
+
+- [Offline Bank Statement Converter](https://alchemforge.com/converter.html): product page with features, pricing and FAQ
+- [Terms, License & Refund Policy](https://alchemforge.com/terms.html): license terms and 14-day refund policy
+- [Privacy Policy](https://alchemforge.com/privacy.html): what the company does and does not collect
+
+## Company
+
+- [Home](https://alchemforge.com/index.html): Alchemforge studio overview
+- [Services](https://alchemforge.com/services.html): workflow-automation consulting
+- [Contact](https://alchemforge.com/contact.html): contact form, email and phone
