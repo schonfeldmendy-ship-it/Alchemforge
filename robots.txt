@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alchemforge.com/sitemap.xml
