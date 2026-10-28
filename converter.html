@@ -129,7 +129,7 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <a class="btn btn-primary" href="#buy"><span class="label">Buy — $129</span><span class="arrow">→</span></a>
+    <a class="btn btn-primary" href="#buy"><span class="label">Get the app</span><span class="arrow">→</span></a>
     <button class="menu-toggle" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false"><span></span></button>
   </div>
 </header>
@@ -142,7 +142,7 @@
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a class="btn btn-primary" href="#buy"><span class="label">Buy — $129</span><span class="arrow">→</span></a>
+  <a class="btn btn-primary" href="#buy"><span class="label">Get the app</span><span class="arrow">→</span></a>
   <div class="meta">Spring Valley, NY · (845) 600-0082</div>
 </div>
 
@@ -170,19 +170,23 @@
           <li>Free updates</li>
           <li>Free tier included — test it on your own statements before you pay</li>
         </ul>
-        <a class="btn btn-primary" href="https://alchemforge.gumroad.com/l/iflgeir" target="_blank" rel="noopener"><span class="label">Buy now — $129</span><span class="arrow">→</span></a>
+        <a class="btn btn-primary" id="storeCta" href="https://apps.microsoft.com/detail/9P2DT3RD35FG?cid=website" target="_blank" rel="noopener"><span class="label">Try it free on the Microsoft Store</span><span class="arrow">→</span></a>
         <p class="buy-smallprint">
-          Secure checkout by Gumroad — instant download and license key by email.
-          14-day money-back guarantee. <a href="terms.html">Terms &amp; refund policy</a>.
+          One-click install, free tier included — test it on your own statements, then unlock with the $129 lifetime license.
         </p>
         <p class="buy-smallprint">
-          Prefer the Microsoft Store? Install in one click, try it free, and unlock with the same $129 license:
+          Prefer to buy directly? <a href="https://alchemforge.gumroad.com/l/iflgeir" target="_blank" rel="noopener">Get the $129 lifetime license on Gumroad</a> — instant license key by email, 14-day money-back guarantee. <a href="terms.html">Terms &amp; refund policy</a>.
         </p>
-        <p style="margin-top: 0.6rem;">
-          <a href="https://apps.microsoft.com/detail/9P2DT3RD35FG?referrer=appbadge&amp;cid=alchemforge" target="_blank" rel="noopener">
-            <img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" alt="Download Offline Bank Statement Converter from the Microsoft Store" style="display:inline-block;"/>
-          </a>
-        </p>
+        <script>
+          (function () {
+            try {
+              var p = new URLSearchParams(window.location.search);
+              if (p.has("gclid") || p.get("src") === "gads") {
+                document.getElementById("storeCta").href = "https://apps.microsoft.com/detail/9P2DT3RD35FG?cid=google_ads";
+              }
+            } catch (e) {}
+          })();
+        </script>
       </div>
     </div>
   </section>
